@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>TEAM Intgram</title>
+  </head>
+  <body>
+    <div class="contents">
+      <aside class="menu">
+        <span class="logo">{ Intgram }</span>
+        <section class="menu-wrapper">
+          <nav class="side-menu">
+            <a class="menu-link" href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+            <a class="menu-link" href="../components/netzero.html">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Net Zero</span>
+            </a>
+            <a class="menu-link" href="../components/archive.html">
+              <i class="fa-solid fa-file-zipper"></i>
+              <span>Archive</span>
+            </a>
+            <a class="menu-link" href="../components/calculation.html">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Calculation</span>
+            </a>
+          </nav>
+        </section>
+      </aside>
+    </div>
+    <main class="contents-container">
+      <section id="login-area" class="contents-header__login">
+        <nav class="top-menu">
+          <a class="top-menu-link" href="#">
+            <i class="fa-regular fa-circle-user"></i>
+            <span>Login</span>
+          </a>
+          <a class="top-menu-link" href="#">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <span>Register</span>
+          </a>
+        </nav>
+      </section>
+      <!--  -->
+      <section id="netZero-area">
+        <article class="netZero-item">
+          <div class="netZero-item__title">
+            <p>탄소중립이란?</p>
+          </div>
+          <div class="netZero-item__txt">
+            <br class="netZero-txt">
+              <!-- <img src="/net-zero.png" class="netZero-img" /> -->
+              탄소중립은 인간의 활동에 의한 온실가스 배출을 최대한 줄이고, 남은
+              온실가스는 흡수, 제거해서 실질적인 배출량을 '0'으로 만든다는
+              개념이다. 획기적으로 배출량을 줄이고 남은 탄소와 흡수되는 탄소량을
+              같게 해, 탄소 순배출이 0이 되게 하는 것으로, 이에 탄소 중립을
+              ‘넷-제로(Net-Zero)’, 탄소 제로(Carbon zero)라고도 한다. 탄소중립은
+              기후위기에 대응해 안전하고 지속가능한 사회를 만들기 위한
+              2050년까지의 온실가스 감축 목표이자 의지를 담은 개념이다.</br>
+            </p>
+
+            <!-- <p class="txt-ref">
+              출처 >> 위키백과
+              <a
+                href="https://ko.wikipedia.org/wiki/%ED%83%84%EC%86%8C_%EC%A4%91%EB%A6%BD"
+                >(ko.wikipedia.org/wiki/탄소_중립)</a
+              >
+            </p> -->
+          </div>
+        </article>
+      </section>
+      <!--  -->
+      <section class="contents-area">
+        <article class="content-area">
+          <div class="content-area__title">전국 배출, 흡수 통계</div>
+          <div class="content-area__select">
+            <select id="emitYear" name="eYear">
+              <option>2013</option>
+              <option>2014</option>
+              <option>2015</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option selected>2021</option>
+            </select>
+            <span>년 전국 기준</span>
+          </div>
+        </article>
+        <article>
+          <div class="emit-list">
+            <div class="emit-list-item">
+              <div class="img">
+                <img src="../img/tot.png" alt="총계이미지" />
+                <p>총계</p>
+              </div>
+              <div class="txt" id="total">
+                <p>배출량 : <br />314,173,770 tonCO2eq</p>
+                <p>흡수량 : <br />164,452,476 tonCO2eq</p>
+              </div>
+            </div>
+            <div class="emit-list-item">
+              <div class="img">
+                <img src="../img/tot.png" alt="총계이미지" />
+                <p>총계</p>
+              </div>
+              <div class="txt" id="total">
+                <p>배출량 : <br />314,173,770 tonCO2eq</p>
+                <p>흡수량 : <br />164,452,476 tonCO2eq</p>
+              </div>
+            </div>
+            <div class="emit-list-item">
+              <div class="img">
+                <img src="../img/tot.png" alt="총계이미지" />
+                <p>총계</p>
+              </div>
+              <div class="txt" id="total">
+                <p>배출량 : <br />314,173,770 tonCO2eq</p>
+                <p>흡수량 : <br />164,452,476 tonCO2eq</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="emitChart-area">
+          <div class="emitChart-area__title">탄소배출량 현황</div>
+          <div class="emitChart-area__canvas">
+            <canvas id="myChart"></canvas>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+/*탄소중립이란?*/
+.netZero-item__txt {
+  margin-left: 50px;
+  display: block;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.netZero-item__txt {
+  padding-right: 30px;
+}
+
+.netZero-img {
+  width: 150px;
+  height: auto;
+}
+
+.netZero-txt {
+  padding-right: 30px;
+  display: flex;
+}
+
+.txt-ref {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 50%;
+}
+
+/* 전국 배출, 흡수 통계 개별 정보 카드*/
+.emit-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.emit-list-item {
+  /* border: 1px solid #000; */
+  width: 28%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 그림자 효과 */
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #ffffff;
+  border-radius: 10px;
+}
+
+.img {
+  margin-right: 20px;
+}
+.img img {
+  width: 75px;
+  height: auto;
+}
+
+.img > p {
+  text-align: center;
+}
+
+div.txt {
+  display: block;
+}
+
+div.txt > p {
+  margin: 30px 0 30px 0;
+}
+
+/* 탄소배출 그래프 */
+
+/* 아카이브 메뉴 >> 뉴스피드 */
+#news-area,
+#video-area {
+  width: 80%;
+  margin-left: 100px;
+}
+
+#news-area {
+  margin-bottom: 60px;
+}
+
+.news-list__title,
+.video-list__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.news-list__title {
+  margin-bottom: 20px;
+}
+
+.news-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.news-list__img {
+  width: 100px;
+  height: auto;
+}
+
+.news-txt__title {
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.news-txt__detail {
+  font-size: 14px;
+  opacity: 50%;
+}
+
+/*탄소배출량 계산하기*/
+
+.calc-trans,
+.calc-fuel {
+  margin-bottom: 50px;
+}
+
+.calc-trans-list,
+.calc-fuel-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calc-FE__input,
+.calc-date__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* calc-trans-item 카드? 만들것 */
+.calc-trans-item,
+.calc-fuel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-trans-item > i,
+.calc-fuel-item > i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.calc-trans-item > span,
+.calc-fuel-item > span {
+  text-align: center;
+}
