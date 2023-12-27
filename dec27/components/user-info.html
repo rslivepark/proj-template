@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-		<title>TEAM Intgram</title>
-	</head>
-	<body>
-		<div class="contents">
-			<aside class="menu">
-				<span class="logo">{ Intgram }</span>
-				<section class="menu-wrapper">
-					<nav class="side-menu">
-						<a class="menu-link" href="#">
-							<i class="fa-solid fa-house"></i>
-							<span>Home</span>
-						</a>
-						<a class="menu-link" href="../components/netzero.html">
-							<i class="fa-solid fa-seedling"></i>
-							<span>Net Zero</span>
-						</a>
-						<a class="menu-link" href="../components/archive.html">
-							<i class="fa-solid fa-file-zipper"></i>
-							<span>Archive</span>
-						</a>
-						<a class="menu-link" href="../components/calculation.html">
-							<i class="fa-solid fa-calculator"></i>
-							<span>Calculation</span>
-						</a>
-					</nav>
-				</section>
-			</aside>
-		</div>
-		<main class="contents-container">
-			<section id="login-area" class="contents-header__login">
-				<nav class="top-menu">
-					<a class="top-menu-link" href="./user-info.html">
-						<i class="fa-regular fa-circle-user"></i>
-						<span>Welcome User</span>
-					</a>
-					<a class="top-menu-link" href="#">
-						<i class="fa-solid fa-arrow-right-from-bracket"></i>
-						<span>Logout</span>
-					</a>
-				</nav>
-			</section>
-			<!--  -->
-			<section class="user-profile">
+    <title>TEAM Intgram</title>
+  </head>
+  <body>
+    <div class="contents">
+      <aside class="menu">
+        <span class="logo">{ Intgram }</span>
+        <section class="menu-wrapper">
+          <nav class="side-menu">
+            <a class="menu-link" href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+            <a class="menu-link" href="../components/netzero.html">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Dashboard</span>
+            </a>
+            <a class="menu-link" href="../components/archive.html">
+              <i class="fa-solid fa-file-zipper"></i>
+              <span>Newsfeed</span>
+            </a>
+            <a class="menu-link" href="../components/calculation.html">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Calculation</span>
+            </a>
+          </nav>
+        </section>
+      </aside>
+    </div>
+    <main class="contents-container">
+      <section id="login-area" class="contents-header__login">
+        <nav class="top-menu">
+          <a class="top-menu-link" href="./user-info.html">
+            <i class="fa-regular fa-circle-user"></i>
+            <span>Welcome User</span>
+          </a>
+          <a class="top-menu-link" href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Logout</span>
+          </a>
+        </nav>
+      </section>
+      <!--  -->
+      <section class="user-profile">
         <article class="user-profile-img">
-          <img>
+          <img />
         </article>
         <article class=""></article>
         <article class=""></article>
       </section>
-			<!--  -->
-			<section class="user-info">
-				<form action="#" method="post">
-					<article class="user-info-edit">
-						<div class="user-info__title">
-							<p>Edit Profile</p>
-						</div>
-						<div class="user-info-inputs">
-							<div class="user-info__input">
-								<label for="">Email Address</label>
-								<input type="text" class="user-info__default" />
-							</div>
-							<div class="user-info__input">
-								<label for="">Company</label>
-								<input type="text" class="user-info__default" />
-							</div>
-							<div class="user-info__input">
-								<label for="">Position Titles</label>
-								<input type="text" class="user-info__default" />
-							</div>
-						</div>
-						<div class="user-info-btn">
-							<input type="button" value="Save" />
-						</div>
-					</article>
-					<article class="user-info-line"></article>
-					<article class="user-info-password">
-						<div class="user-info__title">
-							<p>Password</p>
-						</div>
-						<div class="user-info-inputs">
-							<div class="user-info__input">
-								<label for="">Current Password</label>
-								<input type="password" class="user-info__pw" />
-							</div>
-							<div class="user-info__input">
-								<label for="">New Password</label>
-								<input type="password" class="user-info__pw" />
-							</div>
-							<div class="user-info__input">
-								<label for="">Confirm New Password</label>
-								<input type="password" class="user-info__pw" />
-							</div>
-						</div>
-						<div class="user-info-btn">
-							<input type="button" value="Change Password" />
-						</div>
-					</article>
-				</form>
-			</section>
-			<!--  -->
-		</main>
-	</body>
+      <!--  -->
+      <section class="user-info">
+        <article class="user-info-edit">
+          <div class="user-info__title">
+            <p>Edit Profile</p>
+          </div>
+          <div class="user-info-inputs">
+            <div class="user-info__input">
+              <label for="">Email Address</label>
+              <input type="text" class="user-info__default" />
+            </div>
+            <div class="user-info__input">
+              <label for="">Company</label>
+              <input type="text" class="user-info__default" />
+            </div>
+            <div class="user-info__input">
+              <label for="">Position Titles</label>
+              <input type="text" class="user-info__default" />
+            </div>
+          </div>
+          <form action="" method="post">
+            <div class="user-info-btn">
+              <input type="button" value="Save" class="save-btn" />
+            </div>
+          </form>
+        </article>
+        <article class="user-info-line"></article>
+        <article class="user-info-password">
+          <div class="user-info__title">
+            <p>Password</p>
+          </div>
+          <div class="user-info-inputs">
+            <div class="user-info__input">
+              <label for="">Current Password</label>
+              <input type="password" class="user-info__pw" />
+            </div>
+            <div class="user-info__input">
+              <label for="">New Password</label>
+              <input type="password" class="user-info__pw" />
+            </div>
+            <div class="user-info__input">
+              <label for="">Confirm New Password</label>
+              <input type="password" class="user-info__pw" />
+            </div>
+          </div>
+          <form action="" method="post">
+            <div class="user-info-btn">
+              <input type="button" value="Change Password" class="chg-pw" />
+            </div>
+          </form>
+        </article>
+      </section>
+      <!--  -->
+    </main>
+  </body>
 </html>

@@ -1,0 +1,33 @@
+:root {
+  --main: #0147eb;
+  --bg: #f6f8fc;
+  --label: rgb(76, 81, 109);
+  --title: rgb(0, 49, 82);
+  --main-font: 'Pretendard variable';
+}
+
+/* 
+rgb(5,97,255)
+rgb(2,19,80)
+rgb(224,236,255)
+rgb(224,236,255)
+rgb(224,236,255)
+*/
+
+:root {
+  --yellow: rgb(255, 255, 0);
+  --purple: rgb(148, 87, 235);
+  --pink: rgb(255, 182, 193);
+  --orange: rgb(255, 165, 0);
+  --lime: rgb(50, 205, 50);
+}
+
+/*
+rgb(0, 0, 128)
+*/
+
+:root {
+  --deepBlue: rgb(0, 0, 128);
+  --blueViolet: rgb(138, 43, 226);
+  --skyBlue: rgb(135, 206, 250);
+}

@@ -26,11 +26,11 @@
             </a>
             <a class="menu-link" href="../components/netzero.html">
               <i class="fa-solid fa-seedling"></i>
-              <span>Net Zero</span>
+              <span>Dashboard</span>
             </a>
             <a class="menu-link" href="../components/archive.html">
               <i class="fa-solid fa-file-zipper"></i>
-              <span>Archive</span>
+              <span>Newsfeed</span>
             </a>
             <a class="menu-link" href="../components/calculation.html">
               <i class="fa-solid fa-calculator"></i>
@@ -54,37 +54,18 @@
         </nav>
       </section>
       <!-- 비동기 방식으로 로그인 화면 이동 -->
-      <section id="login-screen" style="display: none;"></section>
+      <section id="login-screen" style="display: none"></section>
 
       <!-- 비동기 방식으로 회원가입 화면 이동 -->
-      <section id="join-screen" style="display: none;"></section>
+      <section id="join-screen" style="display: none"></section>
 
       <!--  -->
       <section id="netZero-area">
         <article class="netZero-item">
           <div class="netZero-item__title">
-            <p>탄소중립이란?</p>
+            <p></p>
           </div>
-          <div class="netZero-item__txt">
-            <br class="netZero-txt">
-              <!-- <img src="/net-zero.png" class="netZero-img" /> -->
-              탄소중립은 인간의 활동에 의한 온실가스 배출을 최대한 줄이고, 남은
-              온실가스는 흡수, 제거해서 실질적인 배출량을 '0'으로 만든다는
-              개념이다. 획기적으로 배출량을 줄이고 남은 탄소와 흡수되는 탄소량을
-              같게 해, 탄소 순배출이 0이 되게 하는 것으로, 이에 탄소 중립을
-              ‘넷-제로(Net-Zero)’, 탄소 제로(Carbon zero)라고도 한다. 탄소중립은
-              기후위기에 대응해 안전하고 지속가능한 사회를 만들기 위한
-              2050년까지의 온실가스 감축 목표이자 의지를 담은 개념이다.</br>
-            </p>
-
-            <!-- <p class="txt-ref">
-              출처 >> 위키백과
-              <a
-                href="https://ko.wikipedia.org/wiki/%ED%83%84%EC%86%8C_%EC%A4%91%EB%A6%BD"
-                >(ko.wikipedia.org/wiki/탄소_중립)</a
-              >
-            </p> -->
-          </div>
+          <div class="netZero-item__txt"></div>
         </article>
       </section>
       <!--  -->
@@ -106,7 +87,7 @@
             <span>년 전국 기준</span>
           </div>
         </article>
-        <article class="emit-list-area" >
+        <article class="emit-list-area">
           <div class="emit-list">
             <div class="emit-list-item">
               <div class="img">
@@ -140,15 +121,14 @@
             </div>
           </div>
         </article>
-       </section> 
-       
+      </section>
       <section class="emitCharts-area">
         <article class="emitChart-area">
           <div class="emitChart-area__title">탄소배출량 현황</div>
           <div class="emitChart-area__canvas">
             <canvas id="myChart" width="100%"></canvas>
           </div>
-        </article>        
+        </article>
       </section>
     </main>
   </body>
