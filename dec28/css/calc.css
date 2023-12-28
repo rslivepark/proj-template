@@ -1,0 +1,82 @@
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+#calc-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.calc-header-board {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.calc-nowEmit,
+.calc-goalEmit {
+	width: 40%;
+	height: 100px;
+	background-color: #fff;
+}
+
+.calc-emitBtn > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.calc-emitBtn > div > a > button {
+	margin: 10px 0;
+	border: 0;
+	background-color: #fff;
+	height: 30px;
+}
+
+/*input area*/
+
+.calc-inputArea, .calc-outputArea {
+  margin-top: 50px;
+}
+
+.calc-inputs {
+	display: flex;
+  justify-content: space-between;
+}
+
+#calc-table  {
+	display: flex;
+  
+}
+
+#calc-table > table > tbody > tr > td:nth-child(2) {
+  padding: 10px
+}
+
+.table-btn {
+  margin-top: 20px;
+  border: 0;
+}
+
+
+/*output area*/
+ .calc-outputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*text*/
+.calc-header-title > p {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: 'S-CoreDream-3Light';
+}
+
+.calc-header-title > p:nth-child(2) {
+  font-size: 20px;
+}

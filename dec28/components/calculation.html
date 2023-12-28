@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<title>TEAM Intgram</title>
+	</head>
+	<body>
+		<div class="contents">
+			<header class="menu">
+				<div class="logo"><div>{ Intgram }</div></div>
+
+				<section class="menu-wrapper">
+					<nav class="side-menu">
+						<a class="menu-link" href="#">
+							<i class="fa-solid fa-house"></i>
+							<span>Home</span>
+						</a>
+						<a class="menu-link" href="../components/netzero.html">
+							<i class="fa-solid fa-seedling"></i>
+							<span>Dashboard</span>
+						</a>
+						<a class="menu-link" href="../components/archive.html">
+							<i class="fa-solid fa-file-zipper"></i>
+							<span>Newsfeed</span>
+						</a>
+						<a class="menu-link" href="../components/calculation.html">
+							<i class="fa-solid fa-calculator"></i>
+							<span>Calculation</span>
+						</a>
+					</nav>
+				</section>
+
+				<section id="login-area" class="contents-header__login">
+					<nav class="login-menu">
+						<a class="login-menu-link" href="../components/login.html">
+							<i class="fa-regular fa-circle-user"></i>
+							<span>Login</span>
+						</a>
+						<a class="login-menu-link" href="../components/join.html">
+							<i class="fa-solid fa-arrow-right-to-bracket"></i>
+							<span>Register</span>
+						</a>
+					</nav>
+				</section>
+
+				<!-- 비동기 방식으로 로그인 화면 이동 -->
+				<section id="login-screen" style="display: none"></section>
+
+				<!-- 비동기 방식으로 회원가입 화면 이동 -->
+				<section id="join-screen" style="display: none"></section>
+
+			</header>
+		</div>
+    
+		<main class="contents-container">
+			<!--  -->
+			<div id="calc-area">
+				<section class="calc-header">
+					<div class="calc-header-title">
+						<p>스마트인재개발원</p>
+            <p>2023년 12월 탄소배출 현황</p>
+					</div>
+					<div class="calc-header-board">
+						<div class="calc-nowEmit">
+							<p class="calc-emit__text">현재 탄소 배출량</p>
+							<p class="calc-emit__amount">
+								1,000,000<span>CO<sub>2</sub>eq</span>
+							</p>
+						</div>
+						<div class="calc-goalEmit">
+							<p class="calc-emit__text">목표 탄소 배출량</p>
+							<p class="calc-emit__amount">
+								1억 4천 5백만<span>CO<sub>2</sub>eq</span>
+							</p>
+						</div>
+						<div class="calc-emitBtn">
+							<div class="calc-setDate">
+								<a href="#">
+									<button>날짜 선택</button>
+								</a>
+							</div>
+							<div class="calc-setGoal">
+								<a href="#">
+									<button>목표 선택</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<form action="#">
+					<section class="calc-inputArea">
+						<article class="calc-inputs">
+							<div id="calc-table">
+								<form>
+									<table class="calc-table">
+										<tr>
+											<td>운행일자</td>
+											<td>
+												<input type="text" placeholder="예: 2024/01/05" />
+											</td>
+										</tr>
+
+										<tr>
+											<td>운송수단</td>
+											<td>
+												<select>
+													<option>차량</option>
+													<option>철도</option>
+													<option>선박</option>
+													<option>항공기</option>
+												</select>
+											</td>
+										</tr>
+
+										<tr>
+											<td>사용연료</td>
+											<td>
+												<select>
+													<option>경유</option>
+													<option>중유</option>
+													<option>휘발유</option>
+													<option>LPG</option>
+												</select>
+											</td>
+										</tr>
+
+										<tr>
+											<td>연료량</td>
+											<td><input type="text" /></td>
+										</tr>
+
+										<tr class="table-tr">
+											<td colspan="2" class="table-td" align="center">
+												<input type="button" value="저장" class="table-btn" />
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+							<div class="calc-inputChart">
+								<p class="inputChart-title">1인당 온실가스 배출량</p>
+								<canvas></canvas>
+							</div>
+						</article>
+					</section>
+				</form>
+
+				<section class="calc-outputArea">
+					<article class="calc-outputs">
+						<div class="calc-outputChart1">
+							<p class="output-title">개인의 탄소 배출량</p>
+							<canvas></canvas>
+						</div>
+						<div class="calc-outputChart2">
+							<p class="output-title">기업의 탄소 배출량</p>
+							<canvas></canvas>
+						</div>
+					</article>
+				</section>
+			</div>
+			<!--  -->
+		</main>
+		<script src="/js/script.js" type="module" defer></script>
+	</body>
+</html>
