@@ -15,190 +15,78 @@
     <title>TEAM Intgram</title>
   </head>
   <body>
-		<div class="contents">
-			<header class="menu">
-				<div class="logo"><div>{ Intgram }</div></div>
+    <div class="contents">
+      <header class="menu">
+        <div class="logo"><div>{ Intgram }</div></div>
 
-				<section class="menu-wrapper">
-					<nav class="side-menu">
-						<a class="menu-link" href="#">
-							<i class="fa-solid fa-house"></i>
-							<span>Home</span>
-						</a>
-						<a class="menu-link" href="../components/netzero.html">
-							<i class="fa-solid fa-seedling"></i>
-							<span>Dashboard</span>
-						</a>
-						<a class="menu-link" href="../components/archive.html">
-							<i class="fa-solid fa-file-zipper"></i>
-							<span>Newsfeed</span>
-						</a>
-						<a class="menu-link" href="../components/calculation.html">
-							<i class="fa-solid fa-calculator"></i>
-							<span>Calculation</span>
-						</a>
-					</nav>
-				</section>
+        <section class="menu-wrapper">
+          <nav class="side-menu">
+            <a class="menu-link" href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+            <a class="menu-link" href="../components/netzero.html">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Dashboard</span>
+            </a>
+            <a class="menu-link" href="../components/archive.html">
+              <i class="fa-solid fa-file-zipper"></i>
+              <span>Newsfeed</span>
+            </a>
+            <a class="menu-link" href="../components/calculation.html">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Calculation</span>
+            </a>
+          </nav>
+        </section>
 
-				<section id="login-area" class="contents-header__login">
-					<nav class="login-menu">
-						<a class="login-menu-link" href="../components/login.html">
-							<i class="fa-regular fa-circle-user"></i>
-							<span>Login</span>
-						</a>
-						<a class="login-menu-link" href="../components/join.html">
-							<i class="fa-solid fa-arrow-right-to-bracket"></i>
-							<span>Register</span>
-						</a>
-					</nav>
-				</section>
+        <section id="login-area" class="contents-header__login">
+          <nav class="login-menu">
+            <a class="login-menu-link" href="../components/login.html">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Login</span>
+            </a>
+            <a class="login-menu-link" href="../components/join.html">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              <span>Register</span>
+            </a>
+          </nav>
+        </section>
 
-				<!-- 비동기 방식으로 로그인 화면 이동 -->
-				<section id="login-screen" style="display: none"></section>
+        <!-- 비동기 방식으로 로그인 화면 이동 -->
+        <section id="login-screen" style="display: none"></section>
 
-				<!-- 비동기 방식으로 회원가입 화면 이동 -->
-				<section id="join-screen" style="display: none"></section>
+        <!-- 비동기 방식으로 회원가입 화면 이동 -->
+        <section id="join-screen" style="display: none"></section>
+      </header>
+    </div>
 
-			</header>
-		</div>
-    
-    <main class="contents-container">
+    <main class="news-feed">
       <!--  -->
-      <section id="news-area" class="news-area">
+      <aside id="news-area" class="news-area">
         <p class="news-list__title">News</p>
-        <div class="news-list">
-          <li class="news-list-item">
-            <div>
-              <img
-                src="../img/net-zero.png"
-                alt="뉴스썸네일"
-                class="news-list__img"
-              />
-            </div>
-            <div class="news-txt">
-              <div class="news-txt__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="news-txt__detail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum amet officiis quae, rem id perferendis omnis
-                beatae culpa neque optio consequuntur ratione ea ex fugit ipsum
-                dolorum necessitatibus accusamus, excepturi nesciunt nemo ad!
-                Molestiae, repellendus provident aliquid temporibus laudantium
-                et suscipit doloremque quam animi culpa enim modi neque id.
-              </div>
-            </div>
-          </li>
-          <li class="news-list-item">
-            <div>
-              <img
-                src="../img/net-zero.png"
-                alt="뉴스썸네일"
-                class="news-list__img"
-              />
-            </div>
-            <div class="news-txt">
-              <div class="news-txt__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="news-txt__detail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum amet officiis quae, rem id perferendis omnis
-                beatae culpa neque optio consequuntur ratione ea ex fugit ipsum
-                dolorum necessitatibus accusamus, excepturi nesciunt nemo ad!
-                Molestiae, repellendus provident aliquid temporibus laudantium
-                et suscipit doloremque quam animi culpa enim modi neque id.
-              </div>
-            </div>
-          </li>
-          <li class="news-list-item">
-            <div>
-              <img
-                src="../img/net-zero.png"
-                alt="뉴스썸네일"
-                class="news-list__img"
-              />
-            </div>
-            <div class="news-txt">
-              <div class="news-txt__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="news-txt__detail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum amet officiis quae, rem id perferendis omnis
-                beatae culpa neque optio consequuntur ratione ea ex fugit ipsum
-                dolorum necessitatibus accusamus, excepturi nesciunt nemo ad!
-                Molestiae, repellendus provident aliquid temporibus laudantium
-                et suscipit doloremque quam animi culpa enim modi neque id.
-              </div>
-            </div>
-          </li>
-          <li class="news-list-item">
-            <div>
-              <img
-                src="../img/net-zero.png"
-                alt="뉴스썸네일"
-                class="news-list__img"
-              />
-            </div>
-            <div class="news-txt">
-              <div class="news-txt__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="news-txt__detail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum amet officiis quae, rem id perferendis omnis
-                beatae culpa neque optio consequuntur ratione ea ex fugit ipsum
-                dolorum necessitatibus accusamus, excepturi nesciunt nemo ad!
-                Molestiae, repellendus provident aliquid temporibus laudantium
-                et suscipit doloremque quam animi culpa enim modi neque id.
-              </div>
-            </div>
-          </li>
-          <li class="news-list-item">
-            <div>
-              <img
-                src="../img/net-zero.png"
-                alt="뉴스썸네일"
-                class="news-list__img"
-              />
-            </div>
-            <div class="news-txt">
-              <div class="news-txt__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="news-txt__detail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum amet officiis quae, rem id perferendis omnis
-                beatae culpa neque optio consequuntur ratione ea ex fugit ipsum
-                dolorum necessitatibus accusamus, excepturi nesciunt nemo ad!
-                Molestiae, repellendus provident aliquid temporibus laudantium
-                et suscipit doloremque quam animi culpa enim modi neque id.
-              </div>
-            </div>
-          </li>
+        <div class="news-list" id="newsListContainer">
+          <!-- 여기에 동적으로 생성될 HTML이 들어갑니다. -->
         </div>
-      </section>
+
+        <ul class="pagination" id="paginationContainer">
+          <!-- 여기에 페이지 번호가 동적으로 생성됩니다. -->
+        </ul>
+      </aside>
       <!--  -->
-      <section id="video-area" class="video-area">
+      <aside id="video-area" class="video-area">
         <p class="video-list__title">Videos</p>
-        <div class="video-list">
-          <div class="video-list-item">
-            <div>
-              <!-- <img
-                src="/net-zero.png"
-                alt="영상썸네일"
-                class="video-list__img"
-              /> -->
-            </div>
-            <div class="video-txt">
-              <div class="video-txt__title"></div>
-              <div class="video-txt__detail"></div>
-            </div>
-          </div>
+        <!-- <div class="video-list">
+          <li class="video-list-item">
+            <div id="player"></div>
+          </li>
+        </div> -->
+        <div id="videoContainer" class="video-list">
+          <!-- 여기에 동적으로 생성될 HTML이 들어갑니다. -->
         </div>
-      </section>
+      </aside>
     </main>
-    <script src="/js/script.js" type="module" defer></script>
+    <script src="../js/script.js" type="module" defer></script>
+    <script src="../js/newsfeed.js" defer></script>
   </body>
 </html>
