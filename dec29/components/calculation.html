@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<title>TEAM Intgram</title>
+	</head>
+	<body>
+		<div class="contents">
+			<header class="menu">
+				<div class="logo"><div>{ Intgram }</div></div>
+
+				<section class="menu-wrapper">
+					<nav class="side-menu">
+						<a class="menu-link" href="#">
+							<i class="fa-solid fa-house"></i>
+							<span>Home</span>
+						</a>
+						<a class="menu-link" href="../components/netzero.html">
+							<i class="fa-solid fa-seedling"></i>
+							<span>Dashboard</span>
+						</a>
+						<a class="menu-link" href="../components/archive.html">
+							<i class="fa-solid fa-file-zipper"></i>
+							<span>Newsfeed</span>
+						</a>
+						<a class="menu-link" href="../components/calculation.html">
+							<i class="fa-solid fa-calculator"></i>
+							<span>Calculation</span>
+						</a>
+					</nav>
+				</section>
+
+				<section id="login-area" class="contents-header__login">
+					<nav class="login-menu">
+						<a class="login-menu-link" href="../components/login.html">
+							<i class="fa-regular fa-circle-user"></i>
+							<span>Login</span>
+						</a>
+						<a class="login-menu-link" href="../components/join.html">
+							<i class="fa-solid fa-arrow-right-to-bracket"></i>
+							<span>Register</span>
+						</a>
+					</nav>
+				</section>
+
+				<!-- 비동기 방식으로 로그인 화면 이동 -->
+				<section id="login-screen" style="display: none"></section>
+
+				<!-- 비동기 방식으로 회원가입 화면 이동 -->
+				<section id="join-screen" style="display: none"></section>
+			</header>
+		</div>
+
+		<main class="calc-container">
+			<!--  -->
+
+			<section class="calc-header">
+				<article>
+					<div class="calc-header-title">
+						<p>스마트인재개발원 <sup>2023년 12월 탄소배출 현황</sup></p>
+					</div>
+					<form action="" method="post">
+						<div class="calc-inputs">
+							<ul id="calc-input-lists">
+								<li class="calc-list">
+									<label for="date">운행일자</label>
+									<input
+										type="text"
+										id="date"
+										name="date"
+										placeholder="예: 2024/01/05"
+									/>
+								</li>
+								<li class="calc-list">
+									<label for="vehicle">운송수단</label>
+									<select id="vehicle" name="vehicle">
+										<option value="car">차량</option>
+										<option value="train">철도</option>
+										<option value="ship">선박</option>
+										<option value="airplane">항공기</option>
+									</select>
+								</li>
+								<li class="calc-list">
+									<label for="fuel">사용연료</label>
+									<select id="fuel" name="fuel">
+										<option>경유</option>
+										<option>중유</option>
+										<option>휘발유</option>
+										<option>LPG</option>
+									</select>
+								</li>
+								<li class="calc-list">
+									<label for="fuelAmount">연료량</label>
+									<input type="text" id="fuelAmount" name="fuelAmount" />
+								</li>
+								<li>
+									<input type="submit" value="저장" class="calc-list-btn" />
+								</li>
+							</ul>
+						</div>
+					</form>
+
+					<div class="calc-header-board">
+						<div class="calc-nowEmit">
+							<p class="calc-emit__text">현재 탄소 배출량</p>
+							<p class="calc-emit__amount">
+								1,000,000<span>CO<sub>2</sub>eq</span>
+							</p>
+						</div>
+						<div class="calc-goalEmit">
+							<p class="calc-emit__text">목표 탄소 배출량</p>
+							<p class="calc-emit__amount">
+								1억 4천 5백만<span>CO<sub>2</sub>eq</span>
+							</p>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<section class="calc-inputArea"></section>
+		</main>
+		<!--  -->
+		<section class="calc-outputArea">
+			<article class="calc-outputs">
+				<div class="calc-outputChart1">
+					<p class="output-title">개인의 탄소 배출량</p>
+					<canvas></canvas>
+				</div>
+				<div class="calc-outputChart2">
+					<p class="output-title">기업의 탄소 배출량</p>
+					<canvas></canvas>
+				</div>
+			</article>
+		</section>
+
+		<script src="/js/script.js" type="module" defer></script>
+	</body>
+</html>

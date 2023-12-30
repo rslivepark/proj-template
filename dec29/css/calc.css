@@ -1,0 +1,149 @@
+@font-face {
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'S-CoreDream-3Light';
+}
+
+main.calc-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.calc-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.calc-inputArea,
+.calc-outputArea {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .calc-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+} */
+
+/* #calc-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
+	margin-left: 50px;
+} */
+
+/* #calc-table > table > tbody > tr > td:nth-child(1) {
+	width: ;
+} */
+
+.calc-header-board {
+	display: flex;
+	align-items: center;
+}
+
+.calc-nowEmit,
+.calc-goalEmit {
+	width: 300px;
+	height: 150px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.calc-emit__text,
+.calc-emit__text {
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.calc-emitBtn > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.calc-emitBtn > div > a > button {
+	margin: 10px 0;
+	border: 0;
+	background-color: #fff;
+	height: 30px;
+}
+
+/*input area*/
+
+/*output area*/
+.calc-outputs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.calc-outputChart1,
+.calc-outputChart2 {
+	display: flex;
+	width: 600px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/*text*/
+.calc-header-title > p {
+	font-weight: 700;
+	font-size: 28px;
+	/* text-align: center; */
+}
+
+.calc-header-title > p:nth-child(2) {
+	font-size: 20px;
+}
+
+/*select*/
+
+select {
+	height: 40px;
+	width: 212px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 14px;
+	outline: none;
+	font-family: 'S-CoreDream-3Light';
+}
+
+
+/*list*/
+.calc-list > input {
+		height: 30px;
+	width: 200px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 14px;
+	outline: none;
+	font-family: 'S-CoreDream-3Light';
+}
+
+.calc-list {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+

@@ -1,0 +1,205 @@
+#login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* background-color: #fff; */
+	margin-top: 200px;
+}
+
+.login-title > p {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.login-input__inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.login-input__inputs > label {
+	margin: 10px 0;
+	font-weight: 600;
+}
+
+.login-input__inputs > input {
+	height: 30px;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+.login-input__inputs > input,
+.login-input__inputs > input:focus {
+	outline: none;
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+.login-input__inputs > input::placeholder {
+	font-family: 'S-CoreDream-3Light';
+}
+
+.login-input__inputs > input,
+div.login-input__inputs > input:focus {
+	padding: 5px;
+}
+
+.login-input__checkbox {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.login-input__checkbox > span > input {
+	font-size: 10px;
+}
+
+.login-btn > form > input {
+	width: 450px;
+	height: 50px;
+	border: 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--main);
+	background-color: var(--bg);
+}
+
+/*회원가입*/
+
+#join {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* background-color: #fff; */
+  margin-top: 60px;
+}
+
+.join-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.join-input__inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.join-title {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.join-input__inputs > label {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+
+
+.join-input__inputs > input, .join-input__inputs > input:focus {
+	width: 400px;
+	height: 30px;
+	margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.join-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-input-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.join-input-btn > input {
+	font-size: 16px;
+	border: 0;
+	width: 190px;
+	height: 40px;
+	font-weight: 600;
+	color: var(--main);
+	background-color: var(--bg);
+	margin: 0 5px;
+}
+
+.asterisk {
+  color: rgb(255,69,58)
+}
+
+/* 회원정보 수정 */
+@import url('/css/root.css');
+
+.userInfo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.user-info-edit,
+.user-info-password {
+	width: 400px;
+}
+
+.user-info-edit {
+	margin-bottom: 20px;
+}
+
+.user-info__title {
+	font-size: 36px;
+	font-weight: 600;
+	margin: 5% 0;
+	color: var(--title);
+}
+
+.user-info__input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 3% 0;
+}
+
+.user-info__input > label {
+	color: rgb(76, 81, 109);
+	margin: 10px 0;
+}
+
+.user-info__input > input {
+	height: 30px;
+}
+
+.user-info-btn {
+	display: flex;
+	align-items: center;
+}
+
+.user-info-btn > input {
+	height: 50px;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--main);
+	background-color: var(--bg);
+}
+
+input.save-btn {
+	width: 100px;
+}
+
+input.chg-pw {
+	width: 200px;
+}

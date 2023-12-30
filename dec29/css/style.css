@@ -1,0 +1,155 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import url('reset.css');
+@import url('contents-container.css');
+@import url('login-join.css');
+@import url('user-info.css');
+@import url('mediaquery.css');
+@import url('calc.css');
+@import url('fonts.css');
+@import url('root.css');
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* .contents {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+} */
+
+div.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.menu-wrapper > nav.side-menu > a {
+  display: inline;
+  align-items: center;
+  margin: 30px;
+}
+
+#login-area > nav.login-menu > a {
+  display: inline;
+  align-items: center;
+  margin: 10px;
+}
+
+/* 콘텐츠 보이는 영역 */
+main.contents-container {
+  width: 100%;
+  height: 100%;
+  /* background-color: #f6f8fc; */
+  display: block;
+  align-items: center;
+  overflow-y: scroll;
+
+  /* border-radius: 40px; */
+  /* box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #ffffff; */
+}
+
+main.contents-container::-webkit-scrollbar {
+  display: none;
+}
+
+#netZero-area,
+.contents-area,
+.emitChart-area {
+  background-color: #ffffff;
+}
+
+#netZero-area,
+.contents-area,
+.emitChart-area {
+  margin-left: 20px;
+}
+.netZero-area {
+  display: flex;
+}
+
+.contents-area {
+  /* height: 95%; */
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.netZero-item__title {
+  margin-left: 50px;
+}
+
+.netZero-item__title,
+.content-area__title,
+.emitChart-area__title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.content-area__select {
+  margin-bottom: 20px;
+}
+
+/* 뉴스피드  */
+.news-feed {
+  display: flex;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/*대시보드 메뉴 레이아웃*/
+.contents-area {
+  display: flex;
+}
