@@ -1,0 +1,267 @@
+@media (max-width: 509px) {
+  body > div.off,
+  body > main.off {
+    display: none;
+  }
+
+  body > div.screen-alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #0147eb;
+    color: #f6f8fc;
+    height: 100vh;
+    font-weight: 800;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 900px) {
+  a.menu-link > span {
+    margin-top: 15px;
+  }
+  body > main > section.calc-header > article > form {
+    padding: 0;
+    margin-top: 80px;
+  }
+
+  section.menu-wrapper,
+  section#login-area {
+    display: none;
+  }
+  section.menu-wrapper.active,
+  section#login-area.active {
+    display: flex;
+  }
+
+  .side-menu > a > i,
+  .dropdown > a.menu-link > i,
+  .menu-wrapper > nav > div > i > span {
+    display: none;
+  }
+
+  /*메뉴*/
+  .contents {
+    display: flex;
+  }
+
+  header.menu {
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+  }
+  .logo {
+    font-size: 14px;
+    background-color: yellowgreen;
+  }
+
+  .side-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding: 2%;
+  }
+
+  .menu-wrapper {
+    display: flex;
+  }
+
+  #login-area {
+    display: flex;
+    justify-content: center;
+  }
+  nav.login-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 25px;
+  }
+
+  .login-menu > a > span {
+    display: none;
+  }
+
+  .login-menu-link > i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  a.navbar__toggleBtn {
+    display: flex;
+    position: absolute;
+    right: 30px;
+  }
+
+  /* 로그인 입력 */
+
+  #login {
+    margin-top: 20px;
+  }
+  .login-input__inputs > input,
+  .login-input__inputs > input:focus {
+    width: 250px;
+    height: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .login-btn > input {
+    font-size: 16px;
+    border: 0;
+    width: 270px;
+    height: 40px;
+    font-weight: 800;
+    font-family: 'S-CoreDream-3Light';
+    color: var(--main);
+    background-color: var(--bg);
+  }
+
+  /*계산기 화면*/
+
+  main > section.calc-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main.calc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.calc-line {
+    display: none;
+  }
+
+  section.calc-header {
+    right: 120px;
+  }
+
+  section.calc-header > article {
+    position: relative;
+    right: 40px;
+    bottom: 120px;
+  }
+
+  section.calc-outputArea {
+    position: relative;
+    top: -50px;
+  }
+
+  /* 프로필 화면 */
+  body > main > article.user-info-edit > form > div.user-info__title > p,
+  body > main > article.user-info-password > form > div.user-info__title > p {
+    font-size: 24px;
+  }
+
+  /*뉴스피드*/
+  main.news-feed {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside.news-area {
+    position: relative;
+    right: 20px;
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .side-menu > a > span,
+  .dropdown > a.menu-link > span,
+  .menu-wrapper > nav > div > a > span {
+    font-size: 18px;
+  }
+
+  /*메뉴*/
+  .contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    font-size: 18px;
+    background-color: yellowgreen;
+  }
+
+  .side-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-wrapper {
+    display: flex;
+  }
+
+  #login-area {
+    display: flex;
+    justify-content: center;
+  }
+  .login-menu {
+    display: flex;
+    margin-left: 50px;
+  }
+  .login-menu > a > span {
+    display: none;
+  }
+
+  .login-menu-link > i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  /* 로그인 입력 */
+
+  #login {
+    margin-top: 20px;
+  }
+
+  /*계산기 화면*/
+
+  section.calc-header {
+    left: 10px;
+  }
+
+  section.calc-header > article {
+    margin-left: 100px;
+  }
+  section.calc-header > div {
+    margin-left: 20px;
+  }
+
+  section.calc-outputArea {
+    left: 60px;
+  }
+
+  .calc-header-title > p > span {
+    font-size: 20px;
+  }
+
+  p.calc-emit__text,
+  p.output-title {
+    font-size: 18px;
+  }
+
+  div.calc-nowEmit {
+    margin-right: 200px;
+  }
+  div.calc-outputChart2 {
+    margin-left: 50px;
+  }
+}

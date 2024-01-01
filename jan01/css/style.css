@@ -1,0 +1,161 @@
+@import url('reset.css');
+@import url('contents-container.css');
+@import url('login-join.css');
+@import url('user-info.css');
+@import url('dashboard.css');
+@import url('../css/mediaquery.css');
+@import url('../css/calc-result.css');
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --yellow: rgb(255, 255, 0);
+  --purple: rgb(148, 87, 235);
+  --pink: rgb(255, 182, 193);
+  --orange: rgb(255, 165, 0);
+  --lime: rgb(50, 205, 50);
+  --deepBlue: rgb(0, 0, 128);
+  --blueViolet: rgb(138, 43, 226);
+  --skyBlue: rgb(135, 206, 250);
+  --main: #0147eb;
+  --bg: #f6f8fc;
+}
+
+body {
+  height: 100vh;
+  /* overflow: hidden; */
+  font-family: 'S-CoreDream-3Light';
+}
+
+div.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > div.contents.off > header > div > i {
+  display: none;
+}
+
+header.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+.side-menu > a,
+.dropdown > a.menu-link {
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-menu > a > i,
+.dropdown > a.menu-link > i {
+  margin-right: 10px;
+}
+
+.side-menu > a,
+.dropdown > a.menu-link {
+  font-size: 24px;
+}
+
+.login-menu > a {
+  display: inline;
+  align-items: center;
+  margin: 10px;
+}
+
+.navbar__toggleBtn {
+  display: none;
+}
+
+/* 메뉴 효과*/
+
+/* 뉴스피드  */
+.news-feed {
+  display: flex;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* 비디오 */
+#video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-item {
+  margin: 10px;
+}
+
+button.vjs-big-play-button {
+  width: 50px;
+  height: 28px;
+}
+
+/*대시보드 메뉴 레이아웃*/
+
+/* 지도 */
+path {
+  stroke: black;
+}
+g#ctprvn_test > path:hover {
+  stroke-width: 2px;
+}
+#ctprvn_test:hover popup {
+  display: block;
+}
+
+.ol-popup {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  opacity: 80%;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  bottom: 12px;
+  left: -50px;
+  min-width: 300px;
+  width: max-content;
+}
+
+/**/
+
+/*반응형 웹*/
+
+.screen-alert {
+  display: none;
+}
+
+/*메뉴효과*/
