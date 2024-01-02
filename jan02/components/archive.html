@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- 비디오 재생 -->
+		<link rel="stylesheet" href="../css/video-js.css" />
+		<script src="../js/video.js" defer></script>
+		<script src="../js/Youtube.js" defer></script>
+		<script src="../js/Youtube.min.js" defer></script>
+
+		<script src="../js/script.js" type="module" defer></script>
+		<script src="../js/menu_min510.js" defer></script>
+    <script src="../js/mouseover.js" defer></script>
+
+		<title>TEAM Intgram</title>
+	</head>
+	<body>
+		<div class="contents off">
+			<header class="menu">
+				<div class="logo">
+					<div>{ Intgram }</div>
+				</div>
+
+				<section class="menu-wrapper">
+					<nav class="side-menu">
+            <div id="horizontal-underline"></div>
+						<a class="menu-link" href="#">
+							<i class="fa-solid fa-house"></i>
+							<span>Home</span>
+						</a>
+
+						<a
+							class="menu-link dropdown-toggle"
+							href="../components/netzero.html"
+						>
+							<i class="fa-solid fa-seedling"></i>
+							<span>Dashboard</span>
+						</a>
+
+						<a class="menu-link" href="../components/archive.html">
+							<i class="fa-solid fa-file-zipper"></i>
+							<span>Newsfeed</span>
+						</a>
+						<a class="menu-link" href="../components/calculation.html">
+							<i class="fa-solid fa-calculator"></i>
+							<span>Calculation</span>
+						</a>
+					</nav>
+				</section>
+
+				<section id="login-area" class="contents-header__login">
+					<nav class="login-menu">
+						<a class="login-menu-link" href="../components/login.html">
+							<i class="fa-regular fa-circle-user"></i>
+							<span>Login</span>
+						</a>
+						<a class="login-menu-link" href="../components/join.html">
+							<i class="fa-solid fa-arrow-right-to-bracket"></i>
+							<span>Register</span>
+						</a>
+					</nav>
+				</section>
+
+				<a href="#" class="navbar__toggleBtn">
+					<i class="fa-solid fa-bars"></i>
+				</a>
+
+				<!-- 비동기 방식으로 로그인 화면 이동 -->
+				<section id="login-screen" style="display: none"></section>
+
+				<!-- 비동기 방식으로 회원가입 화면 이동 -->
+				<section id="join-screen" style="display: none"></section>
+			</header>
+		</div>
+
+		<main class="news-feed off">
+			<!--  -->
+			<aside id="news-area" class="news-area">
+				<p class="news-list__title">News</p>
+				<div class="news-list" id="newsListContainer">
+					<!-- 여기에 동적으로 생성될 HTML이 들어갑니다. -->
+				</div>
+
+				<ul class="pagination" id="paginationContainer">
+					<!-- 여기에 페이지 번호가 동적으로 생성됩니다. -->
+				</ul>
+			</aside>
+			<!--  -->
+			<aside id="video-area" class="video-area">
+				<p class="video-list__title">Videos</p>
+				<div class="video-list">
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=XVAoQ60yAZc"}]}'
+						></video>
+						<a
+							href="https://www.youtube.com/watch?v=XVAoQ60yAZc"
+							target="_blank"
+							>지구를 뜨겁게 만드는 탄소 이야기...</a
+						>
+					</div>
+
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=WiM6VIey11A"}]}'
+						></video>
+						<a
+							href="https://www.youtube.com/watch?v=WiM6VIey11A"
+							target="_blank"
+							>[KDI 경제정보센터] e-경제정보리뷰: 탄소중립...</a
+						>
+					</div>
+
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=SangLE4ex1U"}]}'
+						></video>
+						<a
+							href="https://www.youtube.com/watch?v=SangLE4ex1U"
+							target="_blank"
+							>⏯️ENG Sub| 탄소배출권, 탄소세, 탄소국경세...</a
+						>
+					</div>
+
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=s4YWzoWWXVc"}]}'
+						></video>
+						<a href="" target="_blank"
+							>탄소중립 알아보기🌱 | 기후위기 팩트체크 1편...</a
+						>
+					</div>
+				</div>
+			</aside>
+		</main>
+
+		<div class="screen-alert">화면 크기를 늘여주세요🙏</div>
+
+	</body>
+</html>

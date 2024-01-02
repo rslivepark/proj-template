@@ -1,0 +1,179 @@
+/* 전국 배출, 흡수 통계 개별 정보 카드*/
+
+.emit-list-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emit-list-item {
+  width: 550px;
+  height: 200px;
+}
+
+.emit-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 그림자 효과 */
+  /* background: #ffffff;
+  box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #ffffff;
+  border-radius: 10px; */
+}
+
+.img {
+  margin-right: 20px;
+}
+.img img {
+  width: 105px;
+  height: auto;
+}
+
+/* 탄소배출 원형그래프 */
+
+/* 아카이브 메뉴 >> 뉴스피드 */
+#news-area, #video-area {
+  width: 80%;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+
+
+#news-area {
+  margin-bottom: 60px;
+}
+
+.news-list__title,
+.video-list__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.news-list__title {
+  margin-bottom: 20px;
+}
+
+.news-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.news-list__img {
+  width: 100px;
+  height: auto;
+}
+
+.news-txt__title {
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.news-txt__detail {
+  font-size: 14px;
+  opacity: 50%;
+}
+
+.pagination {
+  margin-top: 50px;
+}
+
+/* 뉴스피드 - 영상 */
+
+.video-container {
+  display: flex;
+  flex-direction: wrap;
+}
+
+
+/* 탄소배출 그래프 */
+
+.emitChart-Container {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+.emitChart-area {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /*box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #ffffff;*/
+}
+.emitChart-map-area {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+#korea_map {
+  width: 100%;
+  height: 100%;
+}
+/* .emitChart-map-area__canvas {
+  width: 400px;
+  height: 300px;
+  display: flex;
+} */
+
+.emitChart-area__canvas {
+  width: 800px;
+  height: 400px;
+  display: flex;
+}
+.flex_container {
+  display: flex;
+  flex-direction: column;
+}
+.flex_div {
+  display: flex;
+}
+
+/* 원형 그래프 */
+/* #gasPieChart {
+display: none;
+} */
+
+main.contents-container {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+main.contents-container::-webkit-scrollbar {
+  display: none;
+}
+
+.contents-area,
+.emitChart-area {
+  background-color: #ffffff;
+}
+
+#netZero-area,
+.contents-area,
+.emitChart-area {
+  margin-left: 20px;
+}
+
+.contents-area {
+  /* height: 95%; */
+  display: flex;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-area__title,
+.emitChart-area__title,
+.emit-list-title > p {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content-area__select {
+  margin-bottom: 20px;
+}
