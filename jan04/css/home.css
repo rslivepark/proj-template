@@ -1,0 +1,288 @@
+@font-face {
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: 'S-CoreDream-3Light';
+}
+
+
+
+#gasPieChart{
+    display: flex;
+    margin-left: 60px;
+}
+
+.hover01 home-goalEmit {
+    align-items: center;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;    
+}
+.hover01 home-goalEmit {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+#home-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.home-header-board, .middle-header-board, .bottom-header-board {
+	display: flex;
+	align-items: center;
+
+}
+
+
+
+.home-nowEmit{
+    width: 100%;
+	height: flex;
+	background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;}
+
+.home-goalEmit {
+	width: 20%;
+	height: 1000px;
+	background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+
+
+.middle-goalEmit, .middle-nowEmit {
+    width: 33%;
+    height: 300px;
+    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.middle-goalEmit_3 {
+    width: 33%;
+    height: 300px;
+    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin-top: 15px;
+  margin-right: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.middle-nowEmit {
+  margin-right: 15px;
+  margin-left: 15px;
+ }
+
+.bottom-nowEmit{
+    width: 99%;
+    height: 70px;
+    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+
+
+
+.home-emit__text, .home-emit__text {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-weight: 700;
+
+}
+
+.bottom-emit__text{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+.home-emitBtn > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.home-emitBtn > div > a > button {
+	margin: 10px 0;
+	border: 0;
+	background-color: #fff;
+	height: 30px;
+}
+
+
+.home-inputs {
+	display: flex;
+}
+
+#home-table {
+	margin-right: 30%;
+}
+.home-table {
+	display: flex;
+}
+
+#home-table > table > tbody > tr > td:nth-child(2) {
+	padding: 10px;
+}
+
+#home-table > table > tbody > tr > td:nth-child(2) > input {
+  height: 30px;
+  width: 200px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+#home-table > table > tbody > tr > td:nth-child(2) > input:focus {
+    border: 0;
+}
+
+.table-btn {
+	margin-top: 20px;
+	border: 0;
+}
+
+/*output area*/
+.home-outputs {
+	display: flex;
+  
+}
+
+.home-outputChart1 {
+  	margin-right: 30%;
+}
+
+#title {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+#list12 {
+    margin-left: 20%;
+}
+
+#list13 {
+    margin-left: 18%;
+}
+
+.tg{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin-left: 23%;
+}
+.tg2{
+    width: 82%;
+    height: 100px;
+    text-align: center;
+    margin-left: 7.8%;
+}
+
+.tg .tg-eqm31{
+    padding-left: 108px; /* 왼쪽 패딩 */
+}
+
+
+.sub {
+    margin-right: 40px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.text_sub{
+        margin-right: 40px;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    
+}
+
+.sub_4 {
+
+    margin-left: 150px;
+}
+
+#sub_0{
+    margin-bottom: 20px;
+}
+
+.netzero_img {
+   margin-top: 50px ;
+}
+
+text
+.home-header-title > p {
+	font-weight: 700;
+	font-size: 28px;
+
+}
+
+.home-header-title > p:nth-child(2) {
+	font-size: 20px;
+}
+
+.list12 {
+    display: block;
+}
+
+.zero_life{
+    align-items: center;
+    text-align: center;
+}
+
+.zero_life_p{
+font-size: 2rem;
+    position: relative;
+    min-width: 39.5rem;
+    padding-left: 20.5rem;
+    font-weight: 500
+}
+
+.zero_life_div {
+    position: relative;
+    z-index: 0;
+    padding: 2.5rem;
+
+    flex-grow: 1;
+}
+
+
+

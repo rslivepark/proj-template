@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>     
+    
+</head>
+<body>
+    <canvas id="diseaseTropicalChart"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+     fetch("../json/heatwave_days.json")
+      .then((res) => {
+        return res.json()
+      })
+      .then((obj) => {
+        console.log("obj = ")
+        console.log(obj)
+        let dtc_year = []
+        let dtc_days = []
+        for(let i = 10; i < obj.length; i++) {
+          dtc_year.push(obj[i]['연도'])
+          dtc_days.push(obj[i]['지속일수'])
+        }
+        console.log(dtc_days)
+        let diseaseTropicalChart = new Chart(dtc, {
+          type: 'line',
+          data: {
+            labels: ys,
+            datasets: [{
+              label: '지속일수',
+              data: dtc_days,
+              borderColor: '#0052C4',
+              borderWidth: 2,
+              tension: 0.2,
+              fill: false
+            }
+            ]
+          },
+          options: {
+            elements: {
+              point: {
+                radius: 2
+              }
+            },
+            responsive: false,
+            plugins: {
+              legend: {
+                position: 'top'
+              }
+            }
+          }
+        })
+      })   
+      var dtc = document.getElementById('diseaseTropicalChart').getContext('2d');
+    </script>
+</body>
+</html>

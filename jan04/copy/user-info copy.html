@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="stylesheet" href="../css/style.css" /> -->
+		<link rel="stylesheet" href="../css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>TEAM Intgram</title>
+    <script src="/js/script.js" type="module" defer></script>
+    <script src="../js/menu_min510.js" defer></script>
+        <script src="../js/mouseover.js" defer></script>
+  </head>
+  <body>
+		<div class="contents off">
+			<header class="menu">
+				<div class="logo">
+					<img src="../img/logo.png" class="logo_img" />
+				</div>
+
+				<section class="menu-wrapper">
+					<nav class="side-menu">
+						<div id="horizontal-underline"></div>
+						<a class="menu-link" href="../components/home.html">
+							<i class="fa-solid fa-house"></i>
+							<span>Home</span>
+						</a>
+
+						<a class="menu-link" id="dashboard">
+							<i class="fa-solid fa-seedling"></i>
+							<span>Dashboard</span>
+						</a>
+
+						<a class="menu-link" href="../components/archive.html">
+							<i class="fa-solid fa-file-zipper"></i>
+							<span>Newsfeed</span>
+						</a>
+						<a class="menu-link" href="../components/calculation.html">
+							<i class="fa-solid fa-calculator"></i>
+							<span>Calculation</span>
+						</a>
+					</nav>
+				</section>
+
+				<section id="login-area" class="contents-header__login">
+					<nav class="login-menu">
+						<a class="login-menu-link" href="../components/login.html">
+							<i class="fa-regular fa-circle-user"></i>
+							<span>Login</span>
+						</a>
+						<a class="login-menu-link" href="../components/join.html">
+							<i class="fa-solid fa-arrow-right-to-bracket"></i>
+							<span>Register</span>
+						</a>
+					</nav>
+				</section>
+
+				<a href="#" class="navbar__toggleBtn">
+					<i class="fa-solid fa-bars"></i>
+				</a>
+
+				<!-- 비동기 방식으로 로그인 화면 이동 -->
+				<section id="login-screen" style="display: none"></section>
+
+				<!-- 비동기 방식으로 회원가입 화면 이동 -->
+				<section id="join-screen" style="display: none"></section>
+			</header>
+		</div>
+
+		<div>
+			<ul>
+				<li class="submenu-link">
+					<div class="submenu">
+						<ul>
+							<li>
+								<a href="../components/netzero_carbon.html">Carbon Data</a>
+							</li>
+							<li>
+								<a href="../components/netzero_climate.html">Climate Data</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+			const dashboard = document.getElementById('dashboard');
+			const submenu = document.querySelector('.submenu');
+
+			dashboard.addEventListener('mouseenter', function () {
+				submenu.classList.add('active')
+				submenu.style.display = 'block';
+			});
+
+			submenu.addEventListener('mouseleave', function () {
+				submenu.classList.remove('active')
+				submenu.style.display = 'none';
+			});
+		</script>
+
+    <main class="userInfo-container off">
+      <article class="user-info-edit">
+        <form action="" method="post">
+          <div class="user-info__title">
+            <p>프로필 수정</p>
+          </div>
+          <div class="user-info-inputs">
+            <div class="user-info__input">
+              <label for="">이메일 주소</label>
+              <input type="text" class="user-info__default" />
+            </div>
+            <div class="user-info__input">
+              <label for="">회사명</label>
+              <input type="text" class="user-info__default" />
+            </div>
+            <!-- <div class="user-info__input">
+              <label for=""></label>
+              <input type="text" class="user-info__default" />
+            </div> -->
+          </div>
+
+          <div class="user-info-btn">
+            <input type="submit" value="Save" class="save-btn" />
+          </div>
+        </form>
+      </article>
+      <!--       
+			<article class="user-info-line"></article> -->
+      <div class="user-info-line"></div>
+
+      <article class="user-info-password">
+        <form action="" method="post">
+          <div class="user-info__title">
+            <p>비밀번호</p>
+          </div>
+          <div class="user-info-inputs">
+            <div class="user-info__input">
+              <label for="">현재 비밀번호</label>
+              <input type="password" class="user-info__pw" />
+            </div>
+            <div class="user-info__input">
+              <label for="">새로운 비밀번호</label>
+              <input type="password" class="user-info__pw" />
+            </div>
+            <div class="user-info__input">
+              <label for="">새로운 비밀번호 확인</label>
+              <input type="password" class="user-info__pw" />
+            </div>
+          </div>
+
+          <div class="user-info-btn">
+            <input type="submit" value="Change Password" class="chg-pw" />
+          </div>
+        </form>
+      </article>
+
+      <!--  -->
+    </main>
+    <div class="screen-alert">화면 크기를 늘여주세요🙏</div>
+  </body>
+</html>

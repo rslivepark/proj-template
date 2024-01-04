@@ -1,0 +1,763 @@
+@media (max-width: 454px) {
+	body > div.off,
+	body > main.off,
+	body > div.carbon-container,
+	body > div.climate-container,
+	body > main.home-container {
+		display: none;
+	}
+
+	body > div.screen-alert {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		box-sizing: border-box;
+		background-color: #0147eb;
+		color: #f6f8fc;
+		height: 100vh;
+		font-weight: 800;
+		font-size: 30px;
+	}
+}
+@media (min-width: 455px) and (max-width: 509px) {
+	/* body {
+  background-color: yellow;
+ } */
+
+ /*submenu*/
+
+
+ /*home.html*/
+
+
+
+	/*netzero-carbon.html*/
+
+	div.carbon-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	section.carbon-part1 {
+		margin-left: 0;
+		margin-right: 0;
+		width: 450px;
+	}
+
+	section.carbon-part2 {
+		position: relative;
+		margin-right: 0px;
+	}
+
+	/*메뉴*/
+	img.logo_img {
+		width: 140px;
+		height: auto;
+		position: relative;
+		top: -20px;
+	}
+
+	nav > a.menu-link.dropdown-toggle > span {
+		margin-top: 10px;
+	}
+
+	body > main > section.calc-header > article > form {
+		padding: 0;
+		margin-top: 80px;
+	}
+
+	section.menu-wrapper,
+	section#login-area {
+		display: none;
+	}
+	section.menu-wrapper.active,
+	section#login-area.active {
+		display: flex;
+	}
+
+	.side-menu > a > i,
+	.dropdown > a.menu-link > i,
+	.menu-wrapper > nav > div > i > span {
+		display: none;
+	}
+
+	/*메뉴*/
+	.contents {
+		display: flex;
+	}
+
+	header.menu {
+		display: flex;
+		flex-direction: column;
+		/* background-color: yellow; */
+	}
+	.logo {
+		font-size: 14px;
+		/* background-color: yellowgreen; */
+	}
+
+	.side-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100vw;
+		padding: 2%;
+	}
+
+	.menu-wrapper {
+		display: flex;
+	}
+
+	nav.side-menu > a.menu-link {
+		display: inline;
+		align-items: center;
+		margin-top: 10px;
+	}
+
+	#login-area {
+		display: flex;
+		justify-content: center;
+	}
+	nav.login-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		right: 25px;
+	}
+
+	.login-menu > a > span {
+		display: none;
+	}
+
+	.login-menu-link > i {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+
+	a.navbar__toggleBtn {
+		display: flex;
+		position: absolute;
+		right: 30px;
+		top: 55px;
+	}
+
+	/* 로그인 입력 */
+
+	#login {
+		margin-top: 20px;
+	}
+	.login-input__inputs > input,
+	.login-input__inputs > input:focus {
+		width: 250px;
+		height: 20px;
+		margin-bottom: 20px;
+		outline: none;
+		padding: 10px;
+		font-size: 18px;
+	}
+	.login-btn > input {
+		font-size: 16px;
+		border: 0;
+		width: 270px;
+		height: 40px;
+		font-weight: 800;
+		font-family: 'S-CoreDream-3Light';
+		color: var(--main);
+		background-color: var(--bg);
+	}
+
+	/* 뉴스피드 */
+	aside#news-area {
+		width: 70%;
+		margin-left: 15%;
+	}
+	p.news-list__title {
+		font-size: 22px;
+	}
+
+	#newsListContainer > li > div > div.news-txt__title {
+		font-size: 15px;
+	}
+
+	#newsListContainer > li > div > div.news-txt__detail {
+		font-size: 13px;
+	}
+
+	/* 뉴스피드 영상 */
+
+	main.news-feed {
+		flex-direction: column;
+	}
+
+	aside#video-area {
+		display: none;
+	}
+	aside#news-area {
+		margin-top: 30px;
+	}
+
+	/* 계산기 */
+
+	div.calc-header-title > p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		left: -50px;
+		margin-top: 20px;
+	}
+	div.calc-header-title > p > span {
+		font-size: 18px;
+	}
+
+	div.calc-header-board {
+		margin-top: 35px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: -50px;
+	}
+
+	div.calc-header-board > div.calc-nowEmit {
+		margin-right: 0;
+	}
+
+	div.calc-nowEmit {
+		margin-bottom: 20px;
+	}
+	div.calc-nowEmit > p.calc-emit__text,
+	div.calc-goalEmit > p.calc-emit__text,
+	div.calc-nowEmit > p.calc-emit__amount,
+	div.calc-goalEmit > p.calc-emit__amount {
+		font-size: 14px;
+	}
+
+	article.calc-outputs {
+		display: flex;
+		flex-direction: column;
+	}
+
+	article > div.calc-outputChart2 {
+		margin-left: 0;
+	}
+
+	article > div.calc-outputChart1 > p,
+	article > div.calc-outputChart2 > p {
+		text-align: center;
+	}
+
+	section.calc-outputArea > article {
+		position: relative;
+		left: -60px;
+	}
+
+	main > section.calc-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	main.calc-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.calc-line {
+		display: none;
+	}
+
+	section.calc-header {
+		right: 120px;
+	}
+
+	section.calc-header > article {
+		position: relative;
+		right: 40px;
+		bottom: 120px;
+	}
+
+	section.calc-outputArea {
+		position: relative;
+		top: -50px;
+	}
+}
+
+@media (min-width: 510px) and (max-width: 900px) {
+
+	 div.submenu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 1vh;
+  left: 26vw;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+	/*home.html*/
+
+.home-area:nth-child(2) {
+		margin: 0 4%
+}
+
+	.netzero_conference {
+		margin: 0 4%
+	}
+	
+div >h1.netzero-h1, section>h1.netzero-h1 {
+	font-size: 1.6rem;
+}
+
+section.home-area > div > p {
+	font-size: 1.1rem;
+}
+
+div.conf_title > p, div.conf_detail > p:first-child {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+section:nth-child(3) > div > div.netzero_goal_detail > p {
+		font-size: 1.1rem;
+}
+
+div.netzero_goals {
+	display: flex;
+	flex-direction: column;
+}
+
+.conference_history {
+	flex-direction: column;
+}
+
+.home-area:nth-child(4) > .netzero-2050 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.netzero_paris > p:nth-child(3),
+.netzero_report > p:nth-child(3),
+.netzero_korea > p:nth-child(3) {
+	text-align: center;
+}
+
+
+body > main > section:nth-child(4) > .netzero-2050 {
+	display: flex;
+	justify-content: center;
+	margin-left: 70px;
+}
+
+	/*netzero-climate.html*/
+	.climate-container {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	section.climate-part2,
+	section.climate-part3 {
+		margin-left: 0;
+	}
+
+ section.climate-part2 > div:nth-child(1) {
+	margin-top: 30px;
+ }
+
+section.climate-part3 {
+	margin-top: 30px;
+}
+
+	/*netzero-carbon.html*/
+
+	div.carbon-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	section.carbon-part1 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	section.carbon-part2 {
+		position: relative;
+		margin-right: 0px;
+	}
+
+	/* ************************************ */
+	img.logo_img {
+		width: 160px;
+		height: auto;
+		position: relative;
+		top: -20px;
+	}
+
+	a.menu-link > span {
+		margin-top: 15px;
+	}
+	body > main > section.calc-header > article > form {
+		padding: 0;
+		margin-top: 80px;
+	}
+
+	section.menu-wrapper,
+	section#login-area {
+		display: none;
+	}
+	section.menu-wrapper.active,
+	section#login-area.active {
+		display: flex;
+	}
+
+	.side-menu > a > i,
+	.dropdown > a.menu-link > i,
+	.menu-wrapper > nav > div > i > span {
+		display: none;
+	}
+
+	/*메뉴*/
+	.contents {
+		display: flex;
+	}
+
+	header.menu {
+		display: flex;
+		flex-direction: column;
+		/* background-color: yellow; */
+	}
+	.logo {
+		font-size: 14px;
+		/* background-color: yellowgreen; */
+	}
+
+	.side-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100vw;
+		padding: 2%;
+	}
+
+	.menu-wrapper {
+		display: flex;
+	}
+
+	#login-area {
+		display: flex;
+		justify-content: center;
+	}
+	nav.login-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		right: 25px;
+	}
+
+	.login-menu > a > span {
+		display: none;
+	}
+
+	.login-menu-link > i {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+
+	a.navbar__toggleBtn {
+		display: flex;
+		position: absolute;
+		right: 30px;
+		top: 60px;
+	}
+
+	/* header > a.navbar__toggleBtn.clicked {
+		transition: 0.5s ;
+	} */
+
+	/* 로그인 입력 */
+
+	#login {
+		margin-top: 20px;
+	}
+	.login-input__inputs > input,
+	.login-input__inputs > input:focus {
+		width: 250px;
+		height: 20px;
+		margin-bottom: 20px;
+		outline: none;
+		padding: 10px;
+		font-size: 18px;
+	}
+	.login-btn > input {
+		font-size: 16px;
+		border: 0;
+		width: 270px;
+		height: 40px;
+		font-weight: 800;
+		font-family: 'S-CoreDream-3Light';
+		color: var(--main);
+		background-color: var(--bg);
+	}
+
+	/*계산기 화면*/
+
+	main > section.calc-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	main.calc-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.calc-line {
+		display: none;
+	}
+
+	section.calc-header {
+		right: 120px;
+	}
+
+	section.calc-header > article {
+		position: relative;
+		right: 40px;
+		bottom: 120px;
+	}
+
+	section.calc-outputArea {
+		position: relative;
+		top: -50px;
+	}
+
+	/* 프로필 화면 */
+	body > main > article.user-info-edit > form > div.user-info__title > p,
+	body > main > article.user-info-password > form > div.user-info__title > p {
+		font-size: 24px;
+	}
+
+	/*뉴스피드*/
+
+	#news-area {
+		margin-bottom: -30px;
+		margin-left: 70px;
+	}
+
+	main.news-feed {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	aside#video-area {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* 뉴스피드 영상 */
+
+	main.news-feed {
+		flex-direction: column;
+	}
+
+	#video-area > div.video-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.video-item:nth-child(3),
+	div.video-item:nth-child(4) {
+		left: 0;
+		top: 0;
+	}
+
+	aside#video-area {
+		display: none;
+	}
+}
+
+@media (max-width: 1240px) {
+
+	/*home.html*/
+
+h1.netzero-h1 {
+	font-size: 2rem;
+}
+
+.home-area > div > p {
+	font-size: 1.4rem;
+}
+
+div.conf_title > p, div.conf_detail > p:first-child {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+
+.home-area:nth-child(4) > .netzero-2050 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+
+
+
+	/*netzero-climate.html*/
+
+section.climate-part2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+
+	/*netzero-carbon.html*/
+	.carbon-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#yearCarbonChart {
+		width: 700px;
+	}
+
+	/* archive.html */
+	main.news-feed {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#video-area > div.video-list {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: -15%;
+		height: 500px;
+	}
+
+	div.video-item:nth-child(2) {
+		top: -263px;
+		left: 400px;
+	}
+
+	div.video-item:nth-child(3) {
+		left: 0;
+		top: -250px;
+	}
+
+	div.video-item:nth-child(4) {
+		left: 400px;
+		top: -513px;
+	}
+
+	.side-menu > a > span,
+	.dropdown > a.menu-link > span,
+	.menu-wrapper > nav > div > a > span {
+		font-size: 18px;
+	}
+
+	/*메뉴*/
+	.contents {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header.menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.logo {
+		font-size: 18px;
+		/* background-color: yellowgreen; */
+	}
+
+	.side-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-wrapper {
+		display: flex;
+	}
+
+	#login-area {
+		display: flex;
+		justify-content: center;
+	}
+	.login-menu {
+		display: flex;
+		margin-left: 50px;
+	}
+	.login-menu > a > span {
+		display: none;
+	}
+
+	.login-menu-link > i {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+
+	/* 로그인 입력 */
+
+	#login {
+		margin-top: 20px;
+	}
+
+	/*계산기 화면*/
+
+	section.calc-header {
+		left: 10px;
+	}
+
+	section.calc-header > article {
+		margin-left: 100px;
+	}
+	section.calc-header > div {
+		margin-left: 20px;
+	}
+
+	section.calc-outputArea {
+		left: 60px;
+	}
+
+	.calc-header-title > p > span {
+		font-size: 20px;
+	}
+
+	p.calc-emit__text,
+	p.output-title {
+		font-size: 18px;
+	}
+
+	div.calc-nowEmit {
+		margin-right: 200px;
+	}
+	div.calc-outputChart2 {
+		margin-left: 50px;
+	}
+}

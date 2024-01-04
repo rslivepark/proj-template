@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/mediaquery.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- 비디오 재생 -->
+		<link rel="stylesheet" href="../css/video-js.css" />
+		<script src="../js/video.js" defer></script>
+		<script src="../js/Youtube.js" defer></script>
+		<script src="../js/Youtube.min.js" defer></script>
+
+		<script src="../js/script.js" type="module" defer></script>
+		<script src="../js/menu_min510.js" defer></script>
+    <script src="../js/mouseover.js" defer></script>
+    
+
+		<title>TEAM Intgram</title>
+	</head>
+	<body>
+		<div class="contents off">
+			<header class="menu">
+				<div class="logo">
+					<img src="../img/logo.png" class="logo_img" />
+				</div>
+
+				<section class="menu-wrapper">
+					<nav class="side-menu">
+						<div id="horizontal-underline"></div>
+						<a class="menu-link out-home" href="../components/home.html">
+							<i class="fa-solid fa-house"></i>
+							<span>Home</span>
+						</a>
+
+						<a class="menu-link out-db" id="dashboard">
+							<i class="fa-solid fa-seedling"></i>
+							<span>Dashboard</span>
+						</a>
+
+						<a class="menu-link out out-news" href="../components/archive.html">
+							<i class="fa-solid fa-file-zipper"></i>
+							<span>Newsfeed</span>
+						</a>
+						<a class="menu-link out out-calc" href="../components/calculation.html">
+							<i class="fa-solid fa-calculator"></i>
+							<span>Calculation</span>
+						</a>
+					</nav>
+				</section>
+
+				<section id="login-area" class="contents-header__login">
+					<nav class="login-menu">
+						<a class="login-menu-link" href="../components/login.html">
+							<i class="fa-regular fa-circle-user"></i>
+							<span>Login</span>
+						</a>
+						<a class="login-menu-link" href="../components/join.html">
+							<i class="fa-solid fa-arrow-right-to-bracket"></i>
+							<span>Register</span>
+						</a>
+					</nav>
+				</section>
+
+				<a href="#" class="navbar__toggleBtn">
+					<i class="fa-solid fa-bars"></i>
+				</a>
+
+				<!-- 비동기 방식으로 로그인 화면 이동 -->
+				<section id="login-screen" style="display: none"></section>
+
+				<!-- 비동기 방식으로 회원가입 화면 이동 -->
+				<section id="join-screen" style="display: none"></section>
+			</header>
+		</div>
+
+		<div>
+			<ul>
+				<li class="submenu-link">
+					<div class="submenu">
+						<ul>
+							<li>
+								<a href="../components/netzero_carbon.html">Carbon Data</a>
+							</li>
+							<li>
+								<a href="../components/netzero_climate.html">Climate Data</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+			const dashboard = document.getElementById('dashboard');
+			const submenu = document.querySelector('.submenu');
+			const outHome = document.querySelector('.out-home');
+			const outDB = document.querySelector('.out-db');
+			const outNews = document.querySelector('.out-news');
+			const outCalc = document.querySelector('.out-calc');
+
+
+			dashboard.addEventListener('mouseenter', function () {
+				submenu.classList.add('active')
+				submenu.style.display = 'block';
+			});
+
+			submenu.addEventListener('mouseleave', function () {
+				submenu.classList.remove('active')
+				submenu.style.display = 'none';
+			});
+
+		</script>
+
+		<main class="news-feed off">
+			<!--  -->
+			<aside id="news-area" class="news-area">
+				<p class="news-list__title">News</p>
+				<div class="news-list" id="newsListContainer">
+					<!-- 여기에 동적으로 생성될 HTML이 들어갑니다. -->
+				</div>
+
+				<ul class="pagination" id="paginationContainer">
+					<!-- 여기에 페이지 번호가 동적으로 생성됩니다. -->
+				</ul>
+			</aside>
+			<!--  -->
+			<aside id="video-area" class="video-area">
+				<p class="video-list__title">Videos</p>
+				<div class="video-list">
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=XVAoQ60yAZc"}]}'
+						></video>
+						<a
+							href="https://www.youtube.com/watch?v=XVAoQ60yAZc"
+							target="_blank"
+							>지구를 뜨겁게 만드는 탄소 이야기...</a
+						>
+					</div>
+
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=WiM6VIey11A"}]}'
+						></video>
+						<a
+							href="https://www.youtube.com/watch?v=WiM6VIey11A"
+							target="_blank"
+							>[KDI 경제정보센터] e-경제정보리뷰: 탄소중립...</a
+						>
+					</div>
+
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=SangLE4ex1U"}]}'
+						></video>
+						<a
+							href="https://www.youtube.com/watch?v=SangLE4ex1U"
+							target="_blank"
+							>⏯️ENG Sub| 탄소배출권, 탄소세, 탄소국경세...</a
+						>
+					</div>
+
+					<div class="video-item">
+						<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="auto"
+							width="356"
+							height="200"
+							data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=s4YWzoWWXVc"}]}'
+						></video>
+						<a href="" target="_blank"
+							>탄소중립 알아보기🌱 | 기후위기 팩트체크 1편...</a
+						>
+					</div>
+				</div>
+			</aside>
+		</main>
+
+		<div class="screen-alert">화면 크기를 늘여주세요🙏</div>
+<script>
+	
+
+// JSON 파일 경로
+var jsonFilePath = '../json/news.json';
+var itemsPerPage = 5;
+var currentPage = 1;
+
+// 동적으로 HTML 생성
+function createNewsElement(newsData) {
+  var container = document.getElementById('newsListContainer');
+
+  var newsListItem = document.createElement('li');
+  newsListItem.className = 'news-list-item';
+
+  var newsElement = document.createElement('div');
+  newsElement.className = 'news-txt';
+
+  var titleElement = document.createElement('div');
+  titleElement.className = 'news-txt__title';
+  var titleLink = document.createElement('a');
+  titleLink.href = newsData.url;
+  titleLink.textContent = newsData.title;
+  titleElement.appendChild(titleLink);
+
+  var detailElement = document.createElement('div');
+  detailElement.className = 'news-txt__detail';
+  detailElement.textContent = newsData.detail;
+
+  newsElement.appendChild(titleElement);
+  newsElement.appendChild(detailElement);
+  newsListItem.appendChild(newsElement);
+  container.appendChild(newsListItem);
+}
+
+// 페이지 번호 클릭 이벤트 핸들러
+function handlePageClick(pageNumber, data) {
+  currentPage = pageNumber;
+  updateNewsList(data);
+}
+
+// 페이지 번호 생성
+function createPagination(data) {
+  var totalItems = data.newsList.length;
+  var totalPages = Math.ceil(totalItems / itemsPerPage);
+  var paginationContainer = document.getElementById('paginationContainer');
+  paginationContainer.innerHTML = '';
+
+  for (var i = 1; i <= totalPages; i++) {
+    var pageItem = document.createElement('li');
+    pageItem.textContent = i;
+    pageItem.addEventListener('click', function (event) {
+      handlePageClick(parseInt(event.target.textContent), data);
+    });
+    paginationContainer.appendChild(pageItem);
+  }
+}
+
+// 뉴스 리스트 업데이트
+function updateNewsList(data) {
+  var startIdx = (currentPage - 1) * itemsPerPage;
+  var endIdx = startIdx + itemsPerPage;
+  var slicedData = data.newsList.slice(startIdx, endIdx);
+
+  var container = document.getElementById('newsListContainer');
+  container.innerHTML = '';
+
+  // 선택된 페이지에 따라 뉴스 아이템 생성
+  slicedData.forEach(createNewsElement);
+}
+
+// JSON 파일 불러오기
+fetch(jsonFilePath)
+  .then((response) => response.json())
+  .then((data) => {
+    // 초기 페이지 번호 설정
+    currentPage = 1;
+
+    // JSON 데이터를 사용하여 동적으로 HTML 생성
+    updateNewsList(data);
+
+    // 페이지 번호 생성
+    createPagination(data);
+  })
+  .catch((error) => console.error('데이터를 불러오지 못했습니다:', error));
+
+// 비디오피드
+// 새로운 비디오 플레이어를 생성하는 함수
+function createYouTubePlayer(containerId, videoId) {
+  var container = document.getElementById(containerId);
+  var newVideoItem = document.createElement('li');
+  newVideoItem.className = 'video-list-item';
+
+  var newPlayerDiv = document.createElement('div');
+  newPlayerDiv.id = 'player-' + videoId; // 각 플레이어에 고유한 ID 지정
+  newVideoItem.appendChild(newPlayerDiv);
+
+  container.appendChild(newVideoItem);
+
+  // 새로운 div에 대한 YouTube 플레이어 생성
+  new YT.Player(newPlayerDiv, {
+    videoId: videoId,
+    playerVars: {
+      autoplay: false,
+      loop: false,
+      playlist: videoId,
+    },
+    events: {
+      onReady: function (event) {
+        event.target.mute();
+      },
+    },
+  });
+}
+
+// YouTube API 스크립트를 동적으로 로드
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// YouTube API 스크립트가 로드된 후에 호출되는 콜백 함수
+function onYouTubeIframeAPIReady() {
+  // 초기 비디오를 생성합니다.
+  createYouTubePlayer('videoContainer', 'An6LvWQuj_8');
+  createYouTubePlayer('videoContainer', 'An6LvWQuj_8');
+}
+
+</script>
+	</body>
+</html>
